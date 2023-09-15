@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+:root {
+
+    --banesco-font: 'Lato', sans-serif;
+
+    --banesco-gradient-bg: linear-gradient(90deg, rgba(0,121,83,1) 0%, rgba(0,60,113,1) 50%);
+    --banesco-gradient-gbt: linear-gradient(90deg, rgba(0,121,83,1) 0%, rgba(89,209,255,1) 50%);
+
+    --banesco-gradient-btlb: linear-gradient(90deg, rgba(89,209,255,1) 0%, rgba(84,61,184,1) 50%, rgba(0,60,113,1) 100%);
+
+    --banesco-gradient-blv: linear-gradient(90deg, rgba(0,60,113,1) 0%, rgba(84,61,184,1) 50%, rgba(0,121,83,1) 100%);
+
+
+
+    --banesco-primary-green: #007953;
+    --banesco-secondary-green: #219963;
+    --banesco-primary-blue: #003C71;
+    --banesco-secondary-blue: #1A61AB;
+    --banesco-white: #fff;
+    --banesco-red: #E1261C;
+    --banesco-violet: #543DB8;
+    --banesco-dark-red: #B00345;
+    --banesco-clear-blue: #59D1FF;
+    --banesco-yellow: #FFC107;
+    --banesco-purple: #543D88;
+    --banesco-primary-gray: #4c4c4c;
+    --banesco-gray-text: #556176;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--banesco-font);
 }

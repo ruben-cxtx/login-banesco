@@ -1,0 +1,169 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 100px;
+    background-color: var(--banesco-white);
+    padding-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text {
+    color: var(--banesco-primary-blue);
+    font-family: var(--banesco-font);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.underline {
+    width: 61px;
+    height: 6px;
+    background-color: var(--banesco-primary-blue);
+    border-radius: 9px;
+}
+
+.inputs {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.input {
+    position: relative;
+}
+
+.input label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--banesco-gray-text);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background: #eaeaea;
+    border-radius: 6px;
+}
+
+.input input {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--banesco-gray-text);
+    font-size: 19px;
+}
+
+
+.submit-container {
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;
+}
+
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: var(--banesco-white);
+    background-color: var(--banesco-primary-green);
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gray {
+    background-color: #eaeaea;
+    color: var(--banesco-gray-text);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .inputs {
+        margin-top: 35px;
+    }
+
+    .input {
+        width: 90%;
+    }
+
+    .input input {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        width: 95%;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .inputs {
+        gap: 15px;
+    }
+
+    .input input {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .submit {
+        width: 180px;
+        height: 49px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 98%;
+        margin-top: 80px;
+    }
+
+    .text {
+        font-size: 1.3rem;
+    }
+
+    .inputs {
+        gap: 10px;
+    }
+
+    .input input {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .submit {
+        width: 160px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
